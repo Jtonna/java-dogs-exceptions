@@ -46,6 +46,7 @@ public class DogController
         return new ResponseEntity<>(rtnDogs, HttpStatus.OK);
     }
 
+    // localhost:2019/dogs/dogtable
     @GetMapping(value = "/dogtable")
     public ModelAndView showDogTable(){
         ModelAndView mav = new ModelAndView();
