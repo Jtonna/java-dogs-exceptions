@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DogsinitialApplication
 {
 
-    static DogList ourDogList;
+    public static DogList ourDogList;
+    // setting this to public allows controller to see ourDogList
     public static void main(String[] args)
     {
         ourDogList = new DogList();
